@@ -36,8 +36,8 @@ fetch(urlProd)
 
       let isInFavorites = favArr.some((fav) => fav.id === element.id);
       const heartIconSrc = isInFavorites
-        ? "./res/img/icons/favourite.svg"
-        : "./res/img/icons/favourite (1).svg";
+        ? "./assets/img/icons/favourite.svg"
+        : "./assets/img/icons/favourite (1).svg";
 
 
       if (element.categorySecond === "Cloth" || element.categorySecond === "ExoticLeather") {
@@ -59,11 +59,11 @@ fetch(urlProd)
           />
         </div>
         <div class="stars">
-          <img src="./res/img/icons/star.svg" alt="" />
-          <img src="./res/img/icons/star.svg" alt="" />
-          <img src="./res/img/icons/star.svg" alt="" />
-          <img src="./res/img/icons/star.svg" alt="" />
-          <img src="./res/img/icons/star.svg" alt="" />
+          <img src="./assets/img/icons/star.svg" alt="" />
+          <img src="./assets/img/icons/star.svg" alt="" />
+          <img src="./assets/img/icons/star.svg" alt="" />
+          <img src="./assets/img/icons/star.svg" alt="" />
+          <img src="./assets/img/icons/star.svg" alt="" />
         </div>
         <p class="textp">${element.name}</p>
         <div class="money">
@@ -104,11 +104,11 @@ fetch(urlProd)
                   />
                 </div>
                 <div class="stars">
-                  <img src="./res/img/icons/star.svg" alt="" />
-                  <img src="./res/img/icons/star.svg" alt="" />
-                  <img src="./res/img/icons/star.svg" alt="" />
-                  <img src="./res/img/icons/star.svg" alt="" />
-                  <img src="./res/img/icons/star.svg" alt="" />
+                  <img src="./assets/img/icons/star.svg" alt="" />
+                  <img src="./assets/img/icons/star.svg" alt="" />
+                  <img src="./assets/img/icons/star.svg" alt="" />
+                  <img src="./assets/img/icons/star.svg" alt="" />
+                  <img src="./assets/img/icons/star.svg" alt="" />
                 </div>
                 <p class="textp">${element.name}</p>
                 <div class="money">
@@ -149,11 +149,11 @@ fetch(urlProd)
           />
         </div>
         <div class="stars">
-          <img src="./res/img/icons/star.svg" alt="" />
-          <img src="./res/img/icons/star.svg" alt="" />
-          <img src="./res/img/icons/star.svg" alt="" />
-          <img src="./res/img/icons/star.svg" alt="" />
-          <img src="./res/img/icons/star.svg" alt="" />
+          <img src="./assets/img/icons/star.svg" alt="" />
+          <img src="./assets/img/icons/star.svg" alt="" />
+          <img src="./assets/img/icons/star.svg" alt="" />
+          <img src="./assets/img/icons/star.svg" alt="" />
+          <img src="./assets/img/icons/star.svg" alt="" />
         </div>
         <p class="textp">${element.name}</p>
         <div class="money">
@@ -236,8 +236,8 @@ fetch(urlProd)
       for (let btn of btns) {
         if (btn) {
           btn.src = isInFavorites
-            ? "./res/img/icons/favourite.svg"
-            : "./res/img/icons/favourite (1).svg";
+            ? "./assets/img/icons/favourite.svg"
+            : "./assets/img/icons/favourite (1).svg";
         }
       }
     }
