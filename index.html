@@ -1,398 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snobella-Project</title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <title>Home</title>
 
-<body>
+    <style>
+      .swiper,
+      .swiperr {
+        width: 100%;
+        height: 100%;
+      }
 
+      .swiper-slide {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media (max-width: 760px) {
+        .swiper-button-next {
+          right: 20px;
+          transform: rotate(90deg);
+        }
+
+        .swiper-button-prev {
+          left: 20px;
+          transform: rotate(90deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="navHead">
+      <div class="container">
+        <div class="call">
+          <div class="icon">
+            <img src="./assets/img/icons/phone-call (3) 1.svg" alt="" />
+          </div>
+          <div class="number"><a href="tel:+">+748 383 23 14</a></div>
+        </div>
+        <div class="terms">
+          <div class="termsUse"><a href="#">Terms of Use</a></div>
+          <div class="faq"><a href="#">FAQ</a></div>
+          <div class="customerService"><a href="#">Customer service</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
     <header>
-        <div class="hed">
-            <a href="#">
-                <h1>Snobella</h1>
-            </a>
-            <div class="div">
-                <input class="srch" type="text" placeholder="Search all product" />
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+      <div class="container">
+        <div class="upper">
+          <div class="logo"><a href="./index.html">Snobella</a></div>
+          <div class="search">
+            <input
+              class="searchbutton"
+              type="text"
+              placeholder="Search all product"
+            />
             <div class="icon">
-                <div>
-                    <i class="fa-regular fa-user"></i>
-                    <a href="#">Sign up</a>
-                </div>
-                <div>
-                    <i class="fa-regular fa-heart"></i>
-                    <a href="#">Wishlist</a>
-                </div>
-                <div>
-                    <i class="fa fa-shopping-bag"></i>
-                    <a href="#">Basket</a>
-                </div>
+              <img src="./assets/img/icons/search 1.svg" alt="" />
             </div>
+          </div>
+          <ul class="navIcons">
+            <li>
+              <div class="icon">
+                <img src="./assets/img/icons/avatar 1.svg" alt="" />
+              </div>
+              <a
+                href="./login.html"
+                class="signIn block rounded py-2 pl-3 pr-4 text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                >Sign In</a
+              >
+            </li>
+            <li>
+              <div class="icon">
+                <img src="./assets/img/icons/heart (2).svg" alt="" />
+              </div>
+              <a
+                href="./favorite.html"
+                class="wishlist block rounded py-2 pl-3 pr-4 text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+              >
+                Wishlist</a
+              >
+            </li>
+            <li>
+              <div class="icon">
+                <img src="./assets/img/icons/bag.svg" alt="" />
+              </div>
+              <a
+                href="./shoppingCart.html"
+                class="basket block rounded py-2 pl-3 pr-4 text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                >Basket</a
+              >
+            </li>
+            <li>
+              <div class="icon"></div>
+              <a
+                href="#"
+                class="logout block rounded py-2 pl-3 pr-4 text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <nav>
-            <ul class="ul">
-                <li><a href="#">Evening bags</a></li>
-                <li><a href="./sholder.html">Shoulder bag</a></li>
-                <li><a href="./backbag.html">Backpack</a></li>
-                <li><a href="#">Handbag</a></li>
-                <li><a href="#">Postmanbag</a></li>
-                <li><a href="#">Belt bags</a></li>
-            </ul>
-        </nav>
+        <div class="lower">
+          <ul>
+            <li>
+              <a
+                href="./productlist.html"
+                class="Eveningbags block rounded py-2 pl-3 pr-4 text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                >Evening bags</a
+              >
+            </li>
+            <li>
+              <a
+                href="./productlist.html"
+                class="Shoulderbags block rounded py-2 pl-3 pr-4 text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                >Shoulder bag</a
+              >
+            </li>
+            <li>
+              <a
+                href="./productlist.html"
+                class="Backpack block rounded py-2 pl-3 pr-4 text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                >Backpack</a
+              >
+            </li>
+            <li>
+              <a
+                href="./productlist.html"
+                class="Handbags block rounded py-2 pl-3 pr-4 text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                >Handbag</a
+              >
+            </li>
+            <li>
+              <a
+                href="./productlist.html"
+                class="Postmanbag block rounded py-2 pl-3 pr-4 text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                >Postman bag</a
+              >
+            </li>
+            <li>
+              <a
+                href="./productlist.html"
+                class="Beltbags block rounded py-2 pl-3 pr-4 text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                >Belt bags</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
+    <!-- Hero Slider -->
 
-
-    <section class="sec1">
-        <div class="sec-div1">
-            <div class="contect">
-                <h2>30% off</h2>
-                <h1>Handbag products</h1>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content expound the
-                    actual teachings of the great explorer
-                </p>
-                <div class="c-a">
-                    <a href="#">Shop now</a>
-                </div>
-            </div>
-            <div class="sec_1-img">
-                <img src="./img/1.png" />
-            </div>
-        </div>
-        <div class="sec-icon">
-            <img src="./img/Ellipse 24.png" alt="" />
-            <img src="./img/Ellipse 24.png" alt="" />
-            <img src="./img/Rectangle 890.png" alt="" />
-        </div>
-    </section>
-    <!-- *************************** Sektion_1 End************** -->
-
-    <!-- *************************** Sektion_2 Start************** -->
-    <section class="sec2">
-        <div class="sec2-icon">
-            <img src="./img/transport 1 (1).png" alt="" />
-            <p>Guaranteed delivery</p>
-        </div>
-        <div class="sec2-icon">
-            <img src="./img/entrance.png" alt="" />
-            <p>Do not come back</p>
-        </div>
-        <div class="sec2-icon">
-            <img src="./img/lock-alt.png" alt="" />
-            <p>Safe and secure shopping</p>
-        </div>
-        <div class="sec2-icon">
-            <img src="./img/credit-card.png" alt="" />
-            <p>Payment at the door or online</p>
-        </div>
-    </section>
-
-    <section class="sec3">
-        <div class="s_3-div1 div-s3">
-            <p>Shoulder bags</p>
-            <img src="./img/bag1 1.png" />
-        </div>
-        <div class="s_3-div2 div-s3">
-            <p>Hand bag</p>
-            <img src="./img/bag2.png"  />
-        </div>
-        <div class="s_3-div3 div-s3 ">
-            <p>Backpack</p>
-            <img src="./img/bag3.png" />
-        </div>
-        <div class="s_3-div4 div-s3">
-            <p>Evenings bags</p>
-            <img src="./img/bag4.png" />
-        </div>
-    </section>
-
-    <!-- *************************** Sektion_3 End************** -->
-
-    <!-- *************************** Sektion_4 Start************** -->
-
-    <section class="sec4">
-        <div class="sec4-d1">
-            <h2>Featured Products</h2>
-            <div class="bir">
-                <p style="display: inline;">View all products</p>
-                <img src="./img/chevron-left.png" alt="">
-            </div>
-        </div>
-        <div class="cart">
-            <div class="cart1">
-                <div class="sec4-cart">
-                    <div class="sec4-cart1">
-                        <span class="new">New</span>
-                        <img src="./img/Vector.png" class="vector heart" id="vector" />
-                        <img src="./img/c1.png" alt="" class="cart1-bag" />
-                        <div class="star">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                        </div>
-                        <p>
-                            Shoulder Bag Leather Bag Leather
-                            undertakes laborious physical physical
-                        </p>
-                        <div class="span">
-                            <span>$130.00</span>
-                            <span>From $340.00</span>
-                        </div>
-                        <a href="#">Add to card</a>
+    <div class="mrgnn">
+      <div class="bosluq1">
+        <div class="Handbag">
+          <div class="container overflow-hidden">
+            <div class="swiperr myySwiper ms-1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide container">
+                  <div class="leftside">
+                    <div class="percaint">30% off</div>
+                    <div class="handbag-products">Handbag products</div>
+                    <p>
+                      It is a long established fact that a reader will be
+                      distracted by the readable content expound the actual
+                      teachings of the great explorer
+                    </p>
+                    <div class="shop-now shopbtn" name="1">Shop now</div>
+                    <div class="sliderbtns">
+                      <div class="redbtn me-4"></div>
+                      <div class="greybtn1"></div>
+                      <div class="greybtn2"></div>
                     </div>
+                  </div>
+                  <div class="rightside">
+                    <img src="./assets/img/products/bag_hero.png" alt="" />
+                  </div>
                 </div>
-            </div>
-            <div class="cart2">
-                <div class="sec4-cart">
-                    <div class="sec4-cart1">
-                        <span class="percent">30 %</span>
-                        <img src="./img/Vector.png" alt="" class="vector heart" />
-                        <img src="./img/c2.png" alt="" class="cart1-bag" />
-                        <div class="star">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                        </div>
-                        <p>
-                            Shoulder Bag Leather Bag Leather
-                            undertakes laborious physical physical
-                        </p>
-                        <div class="span">
-                            <span>$130.00</span>
-                            <span>From $340.00</span>
-                        </div>
-                        <a href="#">Add to card</a>
+                <div class="swiper-slide container">
+                  <div class="leftside">
+                    <div class="percaint">30% off</div>
+                    <div class="handbag-products">Handbag products</div>
+                    <p>
+                      It is a long established fact that a reader will be
+                      distracted by the readable content expound the actual
+                      teachings of the great explorer
+                    </p>
+                    <div class="shop-now shopbtn" name="2">Shop now</div>
+                    <div class="sliderbtns">
+                      <div class="greybtn1"></div>
+                      <div class="redbtn"></div>
+                      <div class="greybtn2"></div>
                     </div>
+                  </div>
+                  <div class="rightside">
+                    <img src="./assets/img/products/bag_hero.png" alt="" />
+                  </div>
                 </div>
-            </div>
-            <div class="cart2">
-                <div class="sec4-cart">
-                    <div class="sec4-cart1">
-                        <img src="./img/Vector.png" alt="" class="vector heart" />
-                        <img src="./img/c3.png" alt="" class="cart1-bag" />
-                        <div class="star">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                        </div>
-                        <p>
-                            Shoulder Bag Leather Bag Leather
-                            undertakes laborious physical physical
-                        </p>
-                        <div class="span">
-                            <span>$130.00</span>
-                            <span>From $340.00</span>
-                        </div>
-                        <a href="#">Add to card</a>
+                <div class="swiper-slide container">
+                  <div class="leftside">
+                    <div class="percaint">30% off</div>
+                    <div class="handbag-products">Handbag products</div>
+                    <p>
+                      It is a long established fact that a reader will be
+                      distracted by the readable content expound the actual
+                      teachings of the great explorer
+                    </p>
+                    <div class="shop-now shopbtn" name="3">Shop now</div>
+                    <div class="sliderbtns">
+                      <div class="greybtn1"></div>
+                      <div class="greybtn2"></div>
+                      <div class="redbtn"></div>
                     </div>
+                  </div>
+                  <div class="rightside">
+                    <img src="./assets/img/products/bag_hero.png" alt="" />
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- services -->
+      <div class="bosluq2">
+        <div class="services">
+          <div class="container">
+            <ul>
+              <li>
+                <img
+                  src="./assets/img/icons/transport 1.svg"
+                  alt=""
+                  class="icons"
+                />
+                <span class="text">Guaranteed delivery</span>
+              </li>
+              <li>
+                <img src="./assets/img/icons/entrance.svg" alt="" class="icons" />
+                <span class="text">Do not come back</span>
+              </li>
+              <li>
+                <img src="./assets/img/icons/lock-alt.svg" alt="" class="icons" />
+                <span class="text">Safe and secure shopping</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icons/credit-card.svg"
+                  alt=""
+                  class="icons"
+                />
+                <span class="text">Payment at the door or online</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- carousels -->
+
+      <div class="carousel container">
+        <div class="bosluq3">
+          <div class="upperCarousel">
+            <a
+              href="./productlist.html"
+              class="block rounded text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+            >
+              <div class="bags Shoulderbags">
+                <p>Shoulder bags</p>
+                <img
+                  class="bag1"
+                  src="./assets/img/products/kisspng-handbag-satchel-leather-coach-inc-tapestry-5adb94da175541 1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a
+              href="./productlist.html"
+              class="block rounded text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+            >
+              <div class="bags Handbag">
+                <p>Hand bag</p>
+                <img
+                  class="bag2"
+                  src="./assets/img/products/kisspng-chanel-gucci-handbag-wallet-sell-my-gucci-bag-www-pixshark-com-images-galler-5b7def98c254a0 1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a
+              href="./productlist.html"
+              class="block rounded text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+            >
+              <div class="bags Backpack">
+                <p>Backpack</p>
+                <img
+                  class="bag3"
+                  src="./assets/img/products/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 9.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a
+              href="./productlist.html"
+              class="block rounded text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+            >
+              <div class="bags Eveningbags">
+                <p>Evenings bags</p>
+                <img
+                  class="bag4"
+                  src="./assets/img/products/5a34e83495d908 1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <div class="middleText">
+            <p class="Featured-Products">Featured Products</p>
+            <div class="view">
+              <span
+                ><a
+                  href="./productlist.html"
+                  class="block rounded text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                  >View all products</a
+                ></span
+              >
+              <img src="./assets/img/icons/chevron-right.svg" alt="" />
+            </div>
+          </div>
         </div>
 
-    </section>
-
-
-    <!-- *************************** Sektion_4 End************** -->
-
-    <!-- *************************** Sektion_5 Start************** -->
-
-    <section class="sec5">
-        <div class="sec5-d1">
-            <h2>Bestseller</h2>
-            <div class="iki">
-                <p style="display: inline;">View all products</p>
-                <img src="./img/chevron-left.png" alt="">
+        <div class="lowerCarousel">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper feature"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Bestseller -->
+      <div class="bosluq5">
+        <div class="besttseller">
+          <div class="middleText2 container">
+            <p>Bestseller</p>
+            <div class="view">
+              <span
+                ><a
+                  href="./productlist.html"
+                  class="block rounded text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                  >View all products</a
+                ></span
+              >
+              <img src="./assets/img/icons/chevron-right.svg" alt="" />
             </div>
+          </div>
+          <div class="bestseller container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper bstsellerr"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
         </div>
 
-        <div class="cart">
-            <div class="cart1 sec5-cart">
-                <div class="sec4-cart ">
-                    <div class="sec4-cart1 ather">
-                        <span class="new">New</span>
-                        <img src="./img/Vector.png" alt="" class="vector heart" />
-                        <img src="./img/c4.png" alt="" class="sec5-bag1" />
-                        <div class="star">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                        </div>
-                        <p>
-                            Shoulder Bag Leather Bag Leather
-                            undertakes laborious physical physical
-                        </p>
-                        <div class="span">
-                            <span>$130.00</span>
-                            <span>From $340.00</span>
-                        </div>
-                        <a href="#">Add to card</a>
-                    </div>
-                </div>
+        <!-- Discount Products -->
+        <div class="carousels container">
+          <div class="middleText">
+            <p class="Featured-Products">Discount Products</p>
+            <div class="view">
+              <span
+                ><a
+                  href="./productlist.html"
+                  class="block rounded text-grey-700 hover:bg-red-100 md:p-0 md:hover:bg-transparent md:hover:text-red-700"
+                  >View all products</a
+                ></span
+              >
+              <img src="./assets/img/icons/chevron-right.svg" alt="" />
             </div>
-            <div class="cart2 sec5-cart">
-                <div class="sec5-cart">
-                    <div class="sec5-cart1 ather">
-                        <span class="percent">30 %</span>
-                        <img src="./img/Vector.png" alt="" class="vector heart" />
-                        <img src="./img/c5.png" alt="" class="sec5-bag2" />
-                        <div class="sec5-star">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                        </div>
-                        <p>
-                            Shoulder Bag Leather Bag Leather
-                            undertakes laborious physical physical
-                        </p>
-                        <div class="span">
-                            <span>$130.00</span>
-                            <span>From $340.00</span>
-                        </div>
-                        <a href="#">Add to card</a>
-                    </div>
-                </div>
+          </div>
+
+          <div class="lowerCarousel row">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper discountt"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-            <div class="cart2 sec5-cart">
-                <div class="sec5-cart">
-                    <div class="sec5-cart1 ather">
-                        <span class="percent">30 %</span>
-                        <img src="./img/Vector.png" alt="" class="vector heart" />
-                        <img src="./img/c6.png" alt="" class="sec5-bag3" />
-                        <div class="sec5-star star3">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                            <img src="./img/star.png" alt="">
-                        </div>
-                        <p>
-                            Shoulder Bag Leather Bag Leather
-                            undertakes laborious physical physical
-                        </p>
-                        <div class="span">
-                            <span>$130.00</span>
-                            <span>From $340.00</span>
-                        </div>
-                        <a href="#">Add to card</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
 
-
-    </section>
-    <img src="./img/Vector (11).png" alt="" class="heart1" style="display:none;">
-
-    <!-- *************************** Sektion_5 End************** -->
-
-    <!-- *************************** Footer Start************** -->
-
-    <footer>
-        <div class="f-div1">
-            <h2>Snobella</h2>
-            <div class="f-input">
-                <input type="text" placeholder="Search all product" />
-                <img src="./img/search.png" alt="" />
+      <!-- footer -->
+      <div class="footer">
+        <div class="upperFooter container">
+          <div class="logo">
+            <a href="./index.html" class="logo">Snobella</a>
+          </div>
+          <div class="search">
+            <input
+              class="searchbutton"
+              type="text"
+              placeholder="Search all product"
+            />
+            <div class="icon">
+              <img src="./assets/img/icons/search 1.svg" alt="" />
             </div>
+          </div>
         </div>
-        <hr>
-
-        <div class="main">
-            <div class="left">
-                <p>
-                    The wise man therefore always holds
-                    selectionThe wise man therefore always
-                    rejects pleasures to secure other greater
-                </p>
-                <div class="left-div1">
-                    <img src="./img/mesage.png" alt="" />
-                    <span>Snobella@gmail.com</span>
-                </div>
-
-                <div class="left-div2">
-                    <img src="./img/Vector (5).png" alt="" />
-                    <span>+748 383 23 14</span>
-                </div>
-
-                <a href="#"><img src="./img/Vector (4).png" alt="" />Send message</a>
+        <hr />
+        <div class="lowerFooter container">
+          <div class="left">
+            <p>
+              The wise man therefore always holds selectionThe wise man
+              therefore always rejects pleasures to secure other greater
+            </p>
+            <div class="buttons mail">
+              <img
+                src="./assets/img/icons/email (3) 1.svg"
+                alt=""
+              />Snobella@gmail.com
             </div>
-            
-            <div class="middle1">
-                <h2>
-                    Shop
-                </h2>
-                <ul>
-                    <li><a href="#">Shoulder Bag</a></li>
-                    <li><a href="">Backpack</a></li>
-                    <li><a href="">Tote Bag</a></li>
-                    <li><a href="">Hand Bag</a></li>
-                    <li><a href="">Evening bags</a></li>
-                    <li><a href="">Purse</a></li>
-                </ul>
+            <div class="buttons phone">
+              <img src="./assets/img/icons/phone-call (3) 1.svg" alt="" />+748 383
+              23 14
             </div>
-
-            <div class="middle2">
-                <h2>
-                    Company
-                </h2>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Terms of Use</a></li>
-                    <li><a href="">Customer service</a></li>
-                </ul>
+            <div class="buttons message">
+              <img src="./assets/img/icons/send 1.svg" alt="" />Send message
             </div>
-            <div class="middle3">
-                <h2>
-                    Help
-                </h2>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="">Delivery</a></li>
-                    <li><a href="">Cancellation of the order</a></li>
-                    <li><a href="">Don't go back</a></li>
-            </div>
+          </div>
+          <div class="right">
+            <ul>
+              <il class="head">Shop</il>
+              <il>Shoulder Bag</il>
+              <il>Backpack</il>
+              <il>Tote bag</il>
+              <il>Hand bag</il>
+              <il>Evening bags</il>
+              <il>Purse</il>
+            </ul>
+            <ul>
+              <il class="head">Company</il>
+              <il>About us</il>
+              <il>Contact</il>
+              <il>Terms of Use</il>
+              <il>Customer service</il>
+            </ul>
+            <ul>
+              <il class="head">Help</il>
+              <il>FAQ</il>
+              <il>Delivery</il>
+              <il>Cancellation of the order</il>
+              <il>Don't go back</il>
+            </ul>
+          </div>
         </div>
-        <div class="bottom">
-            <div class="f-bottom1">
-                <p>
-                    © 2020. All rights reserved.
-                </p>
+      </div>
+      <!-- credits -->
+      <div class="credits">
+        <div class="container">
+          <div class="text">© 2020. All rights reserved.</div>
+          <div class="socials">
+            <div class="iconn me-5">
+              <img src="/assets/img/icons/instagram (1).svg" alt="" />
             </div>
-            <div class="f-bottom2">
-                <a href="#"><img src="./img/Vector (6).png" alt="" /></a>
-                <a href="#"><img src="./img/Vector (7).png" alt="" /></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <div class="iconn me-5">
+              <img src="/assets/img/icons/facebook (6).svg" alt="" />
             </div>
+            <div class="iconn">
+              <img src="/assets/img/icons/whatsapp.svg" alt="" />
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiperr = new Swiper(".myySwiper", {
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      });
 
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // on: {
+        //   resize: function () {
+        //     swiper.changeDirection(getDirection());
+        //   },
+        // },
+      });
 
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
 
-    <script src="https://kit.fontawesome.com/b5309670f3.js" crossorigin="anonymous"></script>
-    <script src="./assets/script.js"></script>
-</body>
-
+        return direction;
+      }
+      window.addEventListener("resize", function () {
+        swiper.direction = getDirection();
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/logout.js"></script>
+    <script src="./assets/js/search.js"></script>
+  </body>
 </html>
